@@ -2,6 +2,7 @@ import React from 'react';
 
 import './App.css';
 
+// ESM - ES Modules
 
 const primaryNavigation = ['Home', 'Chat', 'Contact US', 'SignIn']
 
