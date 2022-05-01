@@ -4,27 +4,6 @@
   box-sizing: border-box;
 }
 
-.header {
-  background: #4768b5;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 70px;
-}
-
-.nav-items {list-style: none;display: flex;}
-
-.primary-nav .nav-item {padding: 5px 10px;}
-
-.primary-nav .nav-item:last-child {margin-right: 10px;}
-
-.header .logo {margin-left: 15px;}
-
-.header .logo > i {font-size: 1.5em;}
-
-
-
 .chat-wrapper {
   background-color:aquamarine;
   height: 100vh;
@@ -53,12 +32,16 @@
 
 .chat-container .col-2 {
   flex: 3;
-  background-color: blueviolet;
+  /* background-color: blueviolet; */
 }
 
 .chat-container .col-3 {
-  flex: 8;
-  background-color: teal;
+  flex: 6;
+  /* background-color: teal; */
+  
+}
+.users-listing {
+  box-shadow: 0px 8px 10px rgb(0 0 0 / 20%);
 }
 
 /* 10 30 60 -  100%  */

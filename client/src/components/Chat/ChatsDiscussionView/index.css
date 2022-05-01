@@ -1,0 +1,19 @@
+.user-avatar > img {width: 45px;border-radius: 50%;height: 45px;}
+
+.chat-row {display: flex;background: white;align-items: center;justify-content: space-between;height: 85px;border-bottom: 1px solid #e0e0e0;}
+
+.col.col-3.chat-timestamp {background: transparent;}
+
+.col.col-1.user-avatar {flex: 1;background: transparent;}
+
+.col.col-2.user-chat-data {flex: 9;background: transparent;}
+
+.col.col-3.chat-timestamp {flex: 3;}
+
+.chat-row .col {display: flex;align-items: center;justify-content: flex-start;padding-left: 15px;}
+
+.col.col-2.user-chat-data p:last-child {margin-top: 7px;font-size: 0.85em;color: #0007;}
+
+.col.col-2.user-chat-data p:first-child {font-size: 1.1em;}
+
+.col.col-3.chat-timestamp .lastchat-timestamp {border: 1px solid #0005;padding:  5px 10px;font-size: 0.8em;border-radius: 30px;color: #0008;}
