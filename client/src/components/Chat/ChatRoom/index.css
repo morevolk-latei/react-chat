@@ -1,0 +1,129 @@
+.chat-room-header {
+  box-shadow: 0px 3px 2px rgb(0 0 0 / 10%);
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 90px;
+}
+
+.chat-room-header .recepient-name {
+  padding-left: 30px;
+  color: #515151;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  min-width: 190px;
+  text-transform: uppercase;
+  font-size: 1.15em;
+  font-weight: 600;
+}
+
+.chat-room-header .option-dots {margin-right: 40px;}
+
+.chat-room-header .recepient-name p.name {margin-left: 20px;}
+
+.chat-room-header .recepient-name .icon {margin-top: 2px;}
+
+.clickable { cursor: pointer;}
+
+.chat-room-footer {
+  height: 80px;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 2px solid #eee;
+}
+
+.chat-room-footer  .emojis-box {
+  font-size: 2em;
+  color: #c0c0c0;
+  margin-left: 30px;
+}
+
+.chat-room-footer form.send-msg-form {
+  flex: 1;
+  padding-left: 20px;
+}
+
+.chat-room-footer form.send-msg-form input {
+  height: 50px;
+  width: 84%;
+  border: none !important;
+  padding: 10px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.1em;
+}
+.chat-room-footer form.send-msg-form input:focus {
+  outline: none;
+}
+
+.chat-room-footer form.send-msg-form button[type=submit] {
+  padding: 12px 12px 12px 12px;
+  border-radius: 50px;
+  font-size: 14pt;
+  color: #fff;
+  background-color: #4f6ebd;
+  border: 1px solid #4668bf;
+  outline: none;
+  cursor: pointer;
+  margin-right: 50px;
+}
+
+
+.chat-room-container {display: flex;flex-direction: column;height: inherit;}
+
+.chat-room-body {
+  flex: 1;
+  width: 100%;
+  /* background: rebeccapurple; */
+  padding: 25px 10px 5px 10px;
+  overflow-y: auto;
+}
+
+
+.chat-room-body .message-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;padding: 5px 25px;
+}
+
+.chat-room-body  .user-avatar {
+  display: block;
+  width: 45px;
+  height: 45px;
+  background: #e6e7ed;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1em;
+  font-family: 'Montserrat';
+  background-color: darkorange;
+  color: white;
+  font-weight: 600;
+}
+
+.chat-room-body  .user-avatar .avatar-img {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.chat-room-body .message-row .message {
+  margin: 0 35px;
+  background-color: #f6f6f6;
+  padding: 15px;
+  border-radius: 12px;
+  max-width: 50%;
+  color: #555;
+  font-family: sans-serif;
+}
+
+.chat-room-body .message-row.owner {
+  flex-direction: row-reverse;
+}

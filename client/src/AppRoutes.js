@@ -11,7 +11,7 @@ import SignUp from "./components/SignUp";
 
 
 export default function AppRoutes(props) {
-
+  console.log('APP ROUTES ', props)
   const routesConfig = [
     {
       path: '/chat',
@@ -49,17 +49,15 @@ export default function AppRoutes(props) {
     <Route
       path={route.path}
       component={route.Component}
-      key={route.path}
+      key={index}
       exact={route.exact || false}
     />
   )
 
   return (
-    <BrowserRouter>
-      <Switch>
-        {renderRoutes()}
-      </Switch>
-    </BrowserRouter>
+    <Switch>
+      {renderRoutes()}
+    </Switch>
   )
 }
 

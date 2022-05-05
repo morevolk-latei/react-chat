@@ -16,7 +16,7 @@ export default function Header({ navigations }) {
           {
             navigations.map((item) => (
               <li className='nav-item' key={item.label}>
-                <Link to={item.path} className='nav-link'> {item.label} </Link>
+                <Link to={item.path + ('?' + item.queryStr || '')} className='nav-link'> {item.label} </Link>
               </li>
             ))
           }

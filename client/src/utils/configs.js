@@ -5,7 +5,8 @@ export const primaryNavigations = [
   },
   {
     label: 'Chat app',
-    path: '/chat'
+    path: '/chat',
+    queryStr: 'userPersonate=1290'
   },
   {
     label: 'Our Work',
